@@ -1,0 +1,222 @@
+.box-header {
+  padding: 100px 0;
+}
+
+.navbar {
+  background-color: #00adb5;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.nav-link {
+  margin: 5px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline;
+}
+
+.nav-item i {
+  display: inline-block;
+  transform: translateX(-20px);
+  font-size: 10px;
+  color: white;
+}
+
+.nav-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.list-lab {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 1;
+  width: 150%;
+  background-color: #00adb5;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.list-lab.hidden {
+  opacity: 1;
+  visibility: visible;
+}
+
+.list-lab a {
+  font-size: 14px;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.list-lab a:hover {
+  background-color: black;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.imgAvatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.contact {
+  margin-top: 50px;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.social-link,
+.social-link:link {
+  color: #393e46;
+  display: block;
+  padding: 10px 0;
+  text-align: left;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.social-link:hover {
+  color: #00adb5;
+}
+
+.social-link i {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.donggon {
+  font-size: 18px;
+}
+
+.heading {
+  font-size: 20px;
+  color: #393e46;
+  margin-bottom: 20px;
+}
+
+.img-hobby img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.box-hobby p {
+  color: #818181;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.footer {
+  background-color: #00adb5;
+  padding: 250px 0;
+  font-family: "Carattere", cursive;
+  font-size: 50px;
+  color: #393e46;
+  background-image: url(./image/sky.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.footer p {
+  letter-spacing: 10px;
+}
+
+.box-bt {
+  padding-top: 100px;
+}
+
+.bt {
+  margin-bottom: 100px;
+}
+
+.bt-ex span {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.showPrompt {
+  display: inline-block;
+  background-color: #00adb5;
+  color: white;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #00adb5;
+  transition: all 0.3s;
+}
+
+.showPrompt:hover {
+  background-color: white;
+  color: #00adb5;
+  border: 1px solid #00adb5;
+}
+
+.bt-re {
+  margin-top: 40px;
+}
+
+.bt-re table {
+  margin-top: 40px;
+  width: 400px;
+  text-align: center;
+}
+
+.bt-re table td,
+.bt-re table th {
+  padding: 10px 0;
+}
+
+.bt-re h6 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.bt-re input {
+  margin-bottom: 25px;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: 1px solid #00adb5;
+  outline: none;
+  font-size: 14px;
+}
+
+.hr {
+  margin: 50px 0;
+}
