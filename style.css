@@ -220,3 +220,37 @@
 .hr {
   margin: 50px 0;
 }
+
+#main {
+  width: 400px;
+  margin-top: 40px;
+}
+
+#main table {
+  width: 400px;
+}
+
+#main .btnCal,
+#main .result,
+#main .btnCalEqual {
+  width: 100%;
+  border: none;
+  background-color: #00adb5;
+  color: white;
+  padding: 10px 20px;
+}
+
+#main .btnCal:hover,
+#main .btnCalEqual:hover {
+  background-color: #00acb5ab;
+}
+
+#main .result {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#main .btnCalEqual {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

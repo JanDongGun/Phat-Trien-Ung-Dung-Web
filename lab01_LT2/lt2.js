@@ -66,6 +66,54 @@ function reverse(num) {
   return "Reverse of num " + temp + " is " + rnum;
 }
 
+function f(d) {
+  if (d == "c") {
+    document.getElementById("res").value = "";
+    return;
+  }
+  // reset bản tính
+  res = document.getElementById("res").value;
+  if (res == 0 && d == 0) return;
+  if (d == "+" || d == "-" || d == "*" || d == "/") {
+    opr = d;
+    num = parseFloat(res);
+    document.getElementById("res").value = d;
+    return;
+  }
+  //   Nếu người dùng bấm 1 trong 4 dấu, thì sẽ lưu số đầu tiên với lại dấu đó
+
+  if (d == "=") {
+    num1 = parseFloat(res);
+    switch (opr) {
+      case "+":
+        ans = num + num1;
+        break;
+      case "-":
+        ans = num - num1;
+        break;
+      case "*":
+        ans = num * num1;
+        break;
+      case "/":
+        ans = parseInt(num / num1);
+        break;
+    }
+    document.getElementById("res").value = ans;
+    return;
+  }
+  // Nếu người dùng bấm dấu bằng thì sẽ lấy được số thứ 2 rồi dựa vào dấu để tính
+
+  if (d == "--") {
+    document.getElementById("res").value *= -1;
+    return;
+  }
+  if (!isNaN(document.getElementById("res").value))
+    document.getElementById("res").value += d;
+  else document.getElementById("res").value = d;
+
+  // Nếu k phải NaN thì ghép số vào
+}
+
 showPrompt1.addEventListener("click", sc);
 find.addEventListener("click", () => {
   alert(findLMV());
